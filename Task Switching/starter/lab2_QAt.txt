@@ -1,0 +1,13 @@
+1.	(1)_decalre_box(mympool, 12, 20);
+	(2)_init_box(mympool, sizeof(mympool), 12);
+	(3)rt_alloc_box()
+	(4)rt_free_box()
+2.	return value upon completion of a wait
+3.	(1)put task identified with "p_task" into list ordered by priority
+	(2)get task at head of list: it is the task with highest priority
+4.	(1)Block running task and choose next ready task.
+	(2)Dispatch next task if any identified or dispatch highest ready task
+5.	OS_R_MBX is set only when receiver is blocked and then resumed. Context switching happens in the assembly code and only sender can set the value of 	    
+	OS_R_MBX, therefore we cannot set the return value of OS_R_MBX in rt_mbx_wait().	
+6.	Both os_rdy and os_dly use OS_XCB, which is implmented as a linked list data structure.
+
