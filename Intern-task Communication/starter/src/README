@@ -1,0 +1,13 @@
+To complie the thread implementation:
+	- Navigate to /src/threads
+	- Type "make produce" on the command line
+
+To complie the process implementation:
+	- Navigate to /src/processes
+	- Type "make produce" on the command line
+
+After the executable is generated, type "./produce <n, b, p, c>" where 
+	n = the number of integers
+	b = the size of the buffer
+	p = the numbers of producers
+	c = the numbers of consumers
