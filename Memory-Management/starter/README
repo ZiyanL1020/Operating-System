@@ -1,0 +1,13 @@
+To complie:
+	- Navigate to /starter
+	- Type "make" on the command line
+
+
+After the executable is generated, type "./main_test.out <a,b>" where 
+	a = the algorithm, 0 stands for best fit and 1 stands for worst fit
+	b = the test case number
+		Case(1): Verify allocation and deallocation functions work
+		Case(2): Verify best fit/worst fit find the correct chunk to allocate
+		Case(3): Verify coalescence works in best fit/worst fit
+		Case(4): Verify allocation function stops when the memory runs out
+		Case(5): External fragmentation tests with random requested sizes
